@@ -1,0 +1,324 @@
+body {
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: -moz-fit-content;
+
+  height: fit-content;
+  -webkit-tap-highlight-color: transparent;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  border: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00a6a2; /* Color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00a6a2; /* Color of the scroll thumb on hover */
+}
+.boxcontainer:hover {
+  /* This will make the shadow more pronounced on hover */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  margin: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+nav {
+  height: 10vh;
+  font-size: large;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.dropdown-menu {
+  padding: 0 10px 0 10px;
+}
+
+.dropdown-item-nav {
+  margin: 4px 0 4px 0;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+
+  border-radius: 10px;
+}
+
+.dropdown-item-nav:hover {
+  background-color: #00a6a2;
+  color: white;
+}
+
+.navBar:hover .dropdown-menu {
+  display: block;
+}
+
+.fade-in-dropdown {
+  animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out-dropdown {
+  animation: fadeOut 0.5s forwards;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  border-radius: 25px;
+
+  min-height: -moz-fit-content;
+
+  min-height: fit-content;
+  background-color: #eaf2fa;
+  margin-bottom: 50px;
+}
+
+.SocialRow {
+  border-top: 2px solid;
+  position: relative;
+  bottom: 0;
+}
+
+#subButton {
+  background-color: rgb(0, 166, 162);
+  border-color: rgb(0, 166, 162);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  10% {
+    background-position: 100% 30%;
+  }
+  20% {
+    background-position: 30% 100%;
+  }
+  30% {
+    background-position: 40% 20%;
+  }
+  40% {
+    background-position: 60% 80%;
+  }
+  50% {
+    background-position: 80% 60%;
+  }
+  60% {
+    background-position: 50% 100%;
+  }
+  70% {
+    background-position: 70% 40%;
+  }
+  80% {
+    background-position: 90% 20%;
+  }
+  90% {
+    background-position: 20% 90%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.hero {
+  position: relative; /* Ensure the parent container is relatively positioned */
+
+  height: -moz-fit-content;
+
+  height: fit-content;
+  /*margin: 0 15px; /* Adjust margins as needed */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #00a6a2, #0c2c54);
+  background-size: 150% 150%;
+  animation: gradient 40s ease infinite;
+  /*border-radius: 25px;*/
+
+  z-index: -1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.Endorsment {
+  min-height: 60vh;
+}
+.boxEndorse {
+  border-radius: 25px;
+  background-color: white;
+}
+
+.Features {
+  height: -moz-fit-content;
+  height: fit-content;
+
+  background-color: #faf5f3;
+  border-radius: 25px;
+}
+.boxEndorse {
+  border-radius: 25px;
+  background-color: white;
+}
+
+.card {
+  /* Adjust the values as needed */
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* Optional: Add a transition for hover effects */
+  transition: 0.3s;
+  min-width: 200px;
+}
+
+.card:hover {
+  /* This will make the shadow more pronounced on hover */
+  box-shadow:
+    0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 12px 40px 0 rgba(0, 0, 0, 0.24);
+}
+
+.feature-icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
+
+.affliations {
+  height: 60vh;
+  border-radius: 25px;
+  background: rgb(0, 166, 162);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 166, 162, 1) 0%,
+    rgba(182, 234, 233, 1) 86%
+  );
+}
+
+.testi {
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  background: #0c2e50;
+  color: white;
+}
+
+.review-card {
+  max-width: 400px;
+  min-height: 340px;
+}
+
+.review-name {
+  font-weight: bold;
+}
+
+img {
+}
+
+.ethos {
+  min-height: 40vh;
+}
+
+.penny {
+  min-width: 275px;
+}
+
+
+/*# sourceMappingURL=main.chunk.css.map*/

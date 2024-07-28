@@ -1,0 +1,27 @@
+{
+  "files": {
+    "static/css/0.chunk.css": "/wp-content/themes/my-react-theme/static/css/0.chunk.css",
+    "static/js/0.chunk.js": "/wp-content/themes/my-react-theme/static/js/0.chunk.js",
+    "static/css/0.chunk.css.map": "/wp-content/themes/my-react-theme/static/css/0.chunk.css.map",
+    "static/js/0.chunk.js.map": "/wp-content/themes/my-react-theme/static/js/0.chunk.js.map",
+    "main.css": "/wp-content/themes/my-react-theme/static/css/main.chunk.css",
+    "main.js": "/wp-content/themes/my-react-theme/static/js/main.chunk.js",
+    "main.css.map": "/wp-content/themes/my-react-theme/static/css/main.chunk.css.map",
+    "main.js.map": "/wp-content/themes/my-react-theme/static/js/main.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/my-react-theme/static/js/bundle.js",
+    "runtime-main.js.map": "/wp-content/themes/my-react-theme/static/js/bundle.js.map",
+    "index.php": "/wp-content/themes/my-react-theme/index.php",
+    "static/media/HIM_logo.png": "/wp-content/themes/my-react-theme/static/media/HIM_logo.d1846d95.png",
+    "static/media/image1.png": "/wp-content/themes/my-react-theme/static/media/image1.6b42bdb7.png",
+    "static/media/komapss_logo.png": "/wp-content/themes/my-react-theme/static/media/komapss_logo.5591499b.png",
+    "static/media/penny.png": "/wp-content/themes/my-react-theme/static/media/penny.a3639b78.png",
+    "static/media/star-svgrepo-com.svg": "/wp-content/themes/my-react-theme/static/media/star-svgrepo-com.32086e3f.svg"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/css/0.chunk.css",
+    "static/js/0.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}

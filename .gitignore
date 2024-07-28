@@ -1,4 +1,5 @@
 /react-src/node_modules
 /react-src/build
+/react-src/static/
 .env
 .DS_Store

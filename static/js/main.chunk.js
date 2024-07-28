@@ -1973,7 +1973,7 @@ const Pricingpage = () => {
     price: 10,
     description: "Premium plan for advanced users"
   }, {
-    name: "Enterprise",
+    name: "Enterprise2",
     price: 20,
     description: "Enterprise plan for large organizations"
   }];
@@ -2198,5 +2198,5 @@ module.exports = __webpack_require__(/*! /Users/jaden/kompass-website/wp-content
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",1]]]);
 //# sourceMappingURL=main.chunk.js.map

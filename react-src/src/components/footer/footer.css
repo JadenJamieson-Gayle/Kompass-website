@@ -1,0 +1,18 @@
+footer {
+  border-radius: 25px;
+
+  min-height: fit-content;
+  background-color: #eaf2fa;
+  margin-bottom: 50px;
+}
+
+.SocialRow {
+  border-top: 2px solid;
+  position: relative;
+  bottom: 0;
+}
+
+#subButton {
+  background-color: rgb(0, 166, 162);
+  border-color: rgb(0, 166, 162);
+}

@@ -1,0 +1,44 @@
+.dropdown-menu {
+  padding: 0 10px 0 10px;
+}
+
+.dropdown-item-nav {
+  margin: 4px 0 4px 0;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+
+  border-radius: 10px;
+}
+
+.dropdown-item-nav:hover {
+  background-color: #00a6a2;
+  color: white;
+}
+
+.navBar:hover .dropdown-menu {
+  display: block;
+}
+
+.fade-in-dropdown {
+  animation: fadeIn 0.5s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out-dropdown {
+  animation: fadeOut 0.5s forwards;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

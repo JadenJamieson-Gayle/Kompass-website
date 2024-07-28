@@ -1,0 +1,15 @@
+.testi {
+  height: fit-content;
+  border-radius: 25px;
+  background: #0c2e50;
+  color: white;
+}
+
+.review-card {
+  max-width: 400px;
+  min-height: 340px;
+}
+
+.review-name {
+  font-weight: bold;
+}

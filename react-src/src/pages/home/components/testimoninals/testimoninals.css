@@ -1,7 +1,7 @@
 .testi {
   height: fit-content;
   border-radius: 25px;
-  background: #0c2e50;
+  background: white;
   color: white;
 }
 
@@ -12,4 +12,13 @@
 
 .review-name {
   font-weight: bold;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

@@ -11,6 +11,63 @@ nav {
   transition: background-color 0.3s ease;
 }
 
+.navbar-nav .dropdown-menu {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .dropdown-item {
+  color: #333;
+  padding: 10px 20px;
+  transition: background-color 0.1s ease;
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+}
+
+.offcanvas {
+  background-color: rgb(12, 44, 84) !important;
+}
+
+.offcanvas a {
+  color: white;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.offcanvas a:hover {
+  background-color: rgb(0, 166, 162) !important;
+  color: white;
+}
+
+.offcanvas-header .btn-close {
+  color: white !important;
+  background-color: white !important;
+
+  border: 1px solid white !important;
+  border-radius: 50%;
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(100%);

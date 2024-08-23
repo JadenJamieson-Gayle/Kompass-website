@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "question": "What is Kompass?",
+    "answer": "Kompass is a cloud-based platform which facilitates the key components of goal setting. From assessment with the WHO’s ICF, through to gold-standard GAS goal setting and SMART objectives, it serves as an online platform to simplify and improve service’s current rehabilitative goal setting processes. It provides individuals and services the ability to consistently set goals in a meaningful and efficient manner following best practice guidelines outlined within rehabilitation literature."
+  },
+  {
+    "id": 2,
+    "question": "Why do I need Kompass?",
+    "answer": "Goal setting can be really time-consuming and complex. Literature states that best-practice goal setting involves completing a functional assessment, identifying and prioritising functional problems from that assessment, setting goals based on Goal Attainment Scaling (GAS), setting SMART objectives towards achieving those goals, and creating regular summary reports of all of that data.\n\nResearch that we conducted presented that on average, 70.5 hours were dedicated to these processes over a period of 6 months for one client. For many of us, this is unrealistic, impractical and often impossible.\n\nBy streamlining these gold-standard processes into one platform, time spent on goal setting was found to reduce by 43% without compromising on best-practice. This leaves more time for the clinical, therapeutic work helping your clients move towards their goals, by removing time spent on administrative, paperwork based tasks. Moreover, through the integration of these processes into one platform, all rehabilitation data is automatically organised, preventing lost or mislaid information, which can be very costly."
+  },
+  {
+    "id": 3,
+    "question": "I already have my own ways of setting my goals…",
+    "answer": "Whilst Kompass uses best-practice methodology in goal setting processes, it can be used in a variety of ways, preserving your individual goal-setting expertise and allowing for its use in service-specific ways. Kompass is all about improving efficiency and promoting effective goal-setting, and being clinician designed, the diverse needs of rehabilitation goal setting are considered within the platform.\n\nIf you require assistance in making Kompass work for you, please contact the team to aid your setting-up process. Equally, we offer CPD accredited training on goal-setting, and are happy to provide your service with gold-standard goal setting knowledge."
+  },
+  {
+    "id": 4,
+    "question": "Which clients/patients is this for use with?",
+    "answer": "Kompass can be used with any patients engaged within rehabilitation, regardless of what that rehabilitation is. Some common conditions it is used with are: brain injury, stroke, cardiac conditions, respiratory conditions, mental illness, and persistent pain.\n\nThis is because of the wide-ranging nature of the ICF assessment used, with various different core sets, covering many conditions. For more information on the ICF please click here."
+  },
+  {
+    "id": 5,
+    "question": "Where is the data stored?",
+    "answer": "The document does not provide information about where the data is stored. For more details, please contact the Kompass support team."
+  },
+  {
+    "id": 6,
+    "question": "How well does Kompass track data over time?",
+    "answer": "Unless requested by the licence owner, no data is ever removed from Kompass. As a result, each goal profile is an exact representation of the client’s rehabilitation through their functional assessment and their goals.\n\nWith the addition of the Data Dashboard and Outcome Measures Wizard, more tracking potential is unlocked within Kompass. The ability to efficiently and comprehensively audit services through the data dashboard and track a wide range of metrics within the Outcome Measures Wizard enhances the pre-existing tracking capabilities of Kompass."
+  },
+  {
+    "id": 7,
+    "question": "I don’t feel confident with technology",
+    "answer": "This new iteration of Kompass is designed to be as intuitive and as accessible as possible. However, if you feel unsure or uncertain using it, then the team is readily available to provide demonstrations of every aspect of the platform."
+  },
+  {
+    "id": 8,
+    "question": "Is my data safe?",
+    "answer": "The document does not provide specific information about data safety. For detailed information regarding data security, please contact the Kompass support team."
+  },
+  {
+    "id": 9,
+    "question": "Can I cancel my subscription at any time?",
+    "answer": "30 days notice will be required to cancel any subscriptions. This can be done by emailing us at support@goalmanager.co.uk with your cancellation request. Once we have received your request, your subscription will then run to the day of the month it was purchased before ending, at which point any remaining months will be refunded."
+  },
+  {
+    "id": 10,
+    "question": "Can I export my data if I cancel my subscription?",
+    "answer": "Yes, all data can be exported in .csv file format. Please email support@goalmanager.co.uk with your request to do this."
+  },
+  {
+    "id": 11,
+    "question": "What happens to my data if I cancel my subscription?",
+    "answer": "After any requests to export data have been fulfilled, any data held is deleted 30 days following the end of your subscription. At this point, it will no longer be recoverable."
+  }
+]

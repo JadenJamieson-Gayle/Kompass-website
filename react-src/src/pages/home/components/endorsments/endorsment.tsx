@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./endorsment.css";
 import { Col, Row } from "react-bootstrap";
-import logo from "./logos-kompass/komapss_logo.png";
-import logo2 from "./logos-kompass/University_of_Essex_logo.png";
-import logo3 from "./logos-kompass/HIM_logo.png";
+import axios from "axios";
 
-const endorsment = () => {
+interface post {
+  id: number;
+  title: {
+    rendered: string;
+  };
+  acf: {
+    logo_home: {
+      url: string;
+    };
+  };
+}
+
+const Endorsment = () => {
+  const [customData, setCustomData] = useState<post[]>([]);
+  useEffect(() => {
+    axios
+      .get(
+        "http://localhost:8000/wp-json/wp/v2/endorsement-logo?acf_format=standard&_fields=id,title,acf"
+      )
+      .then((response) => {
+        // Update the state with the fetched data
+        console.log(response); // This will log the entire response object
+        console.log(response.data);
+        setCustomData(response.data);
+      })
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
-    <div className="Endorsment mx-md-5 mx-3 p-5  d-flex justify-content-center align-items-center">
-      <Col sm={4}>
+    <div className="Endorsment mx-md-5 px-md-5 p-3 pb-0 d-flex flex-md-row flex-column justify-content-center align-items-center">
+      <Col sm={12} md={4}>
         <Row>
           {" "}
           <h3 style={{ color: "rgb(0, 166, 162)", textAlign: "left" }}>
@@ -32,27 +57,26 @@ const endorsment = () => {
           </p>
         </Row>
       </Col>
-      <Col sm={8}>
-        <Row className="ps-4">
-          <Col className="my-5 d-flex justify-content-center align-items-center">
-            <img src={logo} height={"auto"} width={200} />
-          </Col>
-          <Col className="my-5 d-flex justify-content-center align-items-center">
-            <img src={logo2} height={"auto"} width={200} />
-          </Col>{" "}
-          <Col className="my-5 d-flex justify-content-center align-items-center">
-            <img src={logo3} height={"auto"} width={200} />
-          </Col>{" "}
-          <Col className="my-5 d-flex justify-content-center align-items-center">
-            <img src={logo2} height={"auto"} width={200} />
-          </Col>{" "}
-          <Col className="my-5 d-flex justify-content-center align-items-center">
-            <img src={logo3} height={"auto"} width={200} />
-          </Col>
+      <Col sm={12} md={8}>
+        <Row className="ps-md-4">
+          {customData.map((item, index) => {
+            return (
+              <Col className="my-5 mx-4 d-flex justify-content-center align-items-center">
+                <img
+                  key={index}
+                  src={item.acf.logo_home.url}
+                  height={"auto"}
+                  width={200}
+                  style={{ maxHeight: "150px" }}
+                  className="endorseImg"
+                />
+              </Col>
+            );
+          })}
         </Row>
       </Col>
     </div>
   );
 };
 
-export default endorsment;
+export default Endorsment;

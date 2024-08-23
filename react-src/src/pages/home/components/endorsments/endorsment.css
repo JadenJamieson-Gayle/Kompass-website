@@ -5,3 +5,9 @@
   border-radius: 25px;
   background-color: white;
 }
+
+@media (max-width: 950px) {
+  .col .endorseImg {
+    width: 150px !important;
+  }
+}

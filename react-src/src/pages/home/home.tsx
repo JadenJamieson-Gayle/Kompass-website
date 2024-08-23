@@ -37,14 +37,14 @@ const Home = () => {
       <section className="my-5">
         <Features />
       </section>
-      <section className="my-5">
+      <section className="my-5 d-flex flex-column justify-content-center align-items-center">
         <Endorsment />
+      </section>
+      <section>
+        <Affliations />
       </section>
       <section className="my-5">
         <Testimoninals />
-      </section>
-      <section className="my-5" hidden>
-        <Affliations />
       </section>
       <section className="my-5">
         {" "}

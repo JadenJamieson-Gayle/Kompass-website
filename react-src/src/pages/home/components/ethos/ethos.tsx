@@ -5,14 +5,19 @@ import { Col, Image, Row } from "react-bootstrap";
 
 const Ethos = () => {
   return (
-    <div className=" mx-md-5 mx-3 p-5 ethos d-flex justify-content-center algin-items-center flex-md-row flex-column">
+    <div className=" mx-md-5 mx-3 px-md-5 p-3  ethos d-flex justify-content-center algin-items-center flex-md-row flex-column">
       <Col sm={5} className="me-3">
         <div className="m-md-4">
           {" "}
-          <Image src={Penny} fluid className="penny" thumbnail />
+          <Image
+            src={Penny}
+            fluid
+            className="penny d-flex align-items-center"
+            thumbnail
+          />
         </div>
       </Col>
-      <Col className="d-flex justify-content-center align-items-center ms-md-3">
+      <Col className="d-flex justify-content-center align-items-center mt-5 mt-md-0 ms-md-3">
         <div className="m-md-4" style={{ textAlign: "left" }}>
           {" "}
           <h3
@@ -33,7 +38,7 @@ const Ethos = () => {
             }}
             className="mt-2 mb-3"
           ></div>
-          <div className="mt-5">
+          <div className="mt-5 me-3 me-md-0">
             {" "}
             <p className="mt-4">
               Transcending traditional boundaries to redefine the essence of

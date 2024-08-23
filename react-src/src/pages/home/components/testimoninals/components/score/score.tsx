@@ -10,7 +10,11 @@ const Score: React.FC<Props> = ({ rating }) => {
     ratings.push(<img src={score_rating} id={`star_${i}`} />);
   }
 
-  return <div className="container-fluid mt-3 ">{ratings}</div>;
+  return (
+    <div className="container-fluid px-0 mt-3 d-flex justify-content-start">
+      {ratings}
+    </div>
+  );
 };
 
 export default Score;

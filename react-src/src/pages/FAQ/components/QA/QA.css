@@ -1,0 +1,9 @@
+.accordion-row {
+  border-top: 1px solid rgb(0, 166, 162);
+  cursor: pointer !important;
+}
+
+.btn-outline-none {
+  border: none !important;
+  outline: none !important;
+}

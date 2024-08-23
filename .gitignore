@@ -3,3 +3,4 @@
 /react-src/static/
 .env
 .DS_Store
+/react-src-backup

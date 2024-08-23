@@ -12,9 +12,11 @@ interface Post {
   };
 
   acf: {
-    content_1: string;
-    title_1: string;
-    icon_1: string;
+    feature_text: string;
+    feature_name: string;
+    feature_image: {
+      url: string;
+    };
   };
 }
 
@@ -24,7 +26,7 @@ const Features = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:8080/wp-json/wp/v2/feature?acf_format=standard&_fields=id,title,acf"
+        "http://localhost:8000/wp-json/wp/v2/features?acf_format=standard&_fields=id,title,acf"
       )
       .then((response) => {
         // Update the state with the fetched data
@@ -38,7 +40,10 @@ const Features = () => {
   return (
     <div className="Features mx-md-5 mx-3 my-5 d-flex justify-content-center align-items-center">
       <Container>
-        <div className="" style={{ textAlign: "center", marginTop: "50px" }}>
+        <div
+          className="mb-5 mb-md-0"
+          style={{ textAlign: "center", marginTop: "50px" }}
+        >
           {" "}
           <h3
             style={{
@@ -55,9 +60,9 @@ const Features = () => {
             return (
               <Col className="my-4" key={index}>
                 <FeatureCard
-                  title={item.acf.title_1}
-                  text={item.acf.content_1}
-                  imageSrc={item.acf.icon_1}
+                  title={item.acf.feature_name}
+                  text={item.acf.feature_text}
+                  imageSrc={item.acf.feature_image.url}
                 />
               </Col>
             );

@@ -50,7 +50,7 @@ const CustomNavbar = () => {
             <Nav className="ms-auto me-5 text-center d-flex justify-content-end">
               <NavDropdown
                 title={"About Us"}
-                childtitles={["About Kompass", "The Team", "Our Purpose"]}
+                childtitles={["About Kompass", "The Team", "Who is it for"]}
               />
               <NavDropdown
                 title={"Research"}
@@ -72,9 +72,16 @@ const CustomNavbar = () => {
               variant="primary"
               style={{ backgroundColor: "#00a6a2", borderColor: "#00a6a2" }}
               href="https://ktest.co.uk/"
-              className="px-3 py-2"
+              className="px-3 py-2 main-btn"
             >
-              Login
+              Log in
+            </Button>
+            <Button
+              variant="primary"
+              href="/request-a-demo"
+              className="ms-3 px-3 py-2 demo-btn"
+            >
+              Request a Demo
             </Button>
           </Navbar.Collapse>
         </Container>
@@ -108,15 +115,15 @@ const CustomNavbar = () => {
                 {" "}
                 <Nav.Item>
                   {" "}
-                  <Nav.Link className="p-1 ps-4 my-2 " href="/about-us">
+                  <Nav.Link className="p-1 ps-4 my-2 " href="/about-kompass">
                     About Kompass
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Link className="p-1 ps-4 my-2" href="/the-team">
                   The team
                 </Nav.Link>
-                <Nav.Link className="p-1 ps-4 my-2" href="/our-purpose">
-                  Our purpose
+                <Nav.Link className="p-1 ps-4 my-2" href="/Who-is-it-for">
+                  Who's it for
                 </Nav.Link>
               </div>
             </div>
@@ -173,7 +180,7 @@ const CustomNavbar = () => {
               variant="primary"
               style={{ backgroundColor: "#00a6a2", borderColor: "#00a6a2" }}
               href="https://ktest.co.uk/"
-              className="px-3 py-2 mt-3"
+              className="px-3 py-2 mt-3 main-btn"
             >
               Login
             </Button>

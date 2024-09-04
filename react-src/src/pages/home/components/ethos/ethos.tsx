@@ -38,7 +38,7 @@ const Ethos = () => {
             }}
             className="mt-2 mb-3"
           ></div>
-          <div className="mt-5 me-3 me-md-0">
+          <div className="mt-5 ">
             {" "}
             <p className="mt-4">
               Transcending traditional boundaries to redefine the essence of

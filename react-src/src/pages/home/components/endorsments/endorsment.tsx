@@ -51,9 +51,10 @@ const Endorsment = () => {
         ></div>
         <Row>
           <p style={{ textAlign: "left" }}>
-            Arcade game frame Animal Crossing Sonic the Hedgehog The Legend of
-            Zelda: A Link to the Past battle pass HP horde mode attract mode
-            grind headshot.
+            We are proud to have the backing of top companies across the
+            industry. Our commitment to excellence is reflected in the trust and
+            support we receive from these market leaders, ensuring we bring you
+            the best in quality and innovation.
           </p>
         </Row>
       </Col>
@@ -61,7 +62,7 @@ const Endorsment = () => {
         <Row className="ps-md-4">
           {customData.map((item, index) => {
             return (
-              <Col className="my-5 mx-4 d-flex justify-content-center align-items-center">
+              <Col className="my-md-5 mx-md-4 my-3 mx-2 d-flex justify-content-center align-items-center">
                 <img
                   key={index}
                   src={item.acf.logo_home.url}

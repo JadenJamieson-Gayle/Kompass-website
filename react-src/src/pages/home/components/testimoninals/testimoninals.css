@@ -3,6 +3,7 @@
   border-radius: 25px;
   background: white;
   color: white;
+  padding: 20px;
 }
 
 .review-card {
@@ -16,9 +17,33 @@
 
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 100%;
 }
 
 .card-hover:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.testimonial-slider-container {
+  width: 100%;
+  overflow: hidden; /* Ensure no overflow beyond the container */
+}
+
+.testimonial-slider-container .slick-slide {
+  padding: 15px; /* Add padding inside each slide */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.testimonial-slider-container .slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Ensure the slide takes up the full width */
+  max-width: 100%; /* Prevent overflow */
+}
+.card-hover > .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content is spaced out and the card body fills the height */
+  flex-grow: 1; /* Allow the card body to grow and fill available space */
 }

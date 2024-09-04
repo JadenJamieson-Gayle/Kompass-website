@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "title": "Case Manager",
+    "content": [
+      "Kompass is an invaluable tool for case managers, offering a streamlined and comprehensive platform to coordinate complex rehabilitation care plans. By consolidating functional assessments, goal setting, and progress tracking, Kompass simplifies the management of multidisciplinary teams, ensuring that all stakeholders are aligned and informed.",
+      "This efficiency reduces workload, allowing case managers to focus more on client-centred care and ensuring that the rehabilitation journey is personalised and effective. Additionally, the platform’s live updates and detailed guidance ensure that goals remain relevant and adaptable, which is essential for the dynamic nature of case management."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Service Leads",
+    "content": [
+      "For service leads, Kompass is a powerful platform that enhances the oversight and coordination of rehabilitation services. By centralizing goal setting and progress tracking, Kompass enables service leads to monitor the effectiveness and efficiency of care delivery in real-time.",
+      "This visibility supports data-driven decision-making, ensuring that resources are allocated effectively and that teams are working cohesively towards common goals. Additionally, the platform’s ability to streamline communication and reduce administrative workload allows service leads to focus on strategic planning and quality improvement, ultimately elevating the standard of care provided."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Psychologists",
+    "content": [
+      "Kompass is an excellent resource for psychologists, offering a structured and efficient way to manage the complexities of rehabilitation. The platform supports the development and tracking of personalized therapeutic goals, allowing psychologists to tailor interventions to each client’s unique needs.",
+      "Whether addressing mental health difficulties, neurodevelopmental disorders, or neurological conditions, Kompass provides the tools necessary for effective care. With features like the WHO's International Classification of Functioning (ICF) and Goal Attainment Scaling (GAS) integrated into the platform, psychologists can ensure that their treatment plans are evidence-based and aligned with best practices.",
+      "Additionally, Kompass facilitates collaboration with other professionals, ensuring a holistic approach to client care and improving overall treatment outcomes."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Occupational Therapists",
+    "content": [
+      "Kompass is a highly beneficial platform for occupational therapists, offering a streamlined approach to setting, managing, and tracking patient rehabilitation goals. With its focus on individualized care, Kompass allows occupational therapists to create tailored interventions that address the specific functional needs of each client.",
+      "Whether focusing on daily living activities, motor skills, or cognitive functions, the platform’s integration of continuous assessment tools enables occupational therapists to monitor progress closely and make timely adjustments to treatment plans.",
+      "Additionally, Kompass fosters collaboration with other healthcare professionals, ensuring a comprehensive, multidisciplinary approach that enhances the effectiveness of occupational therapy interventions."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Physiotherapists",
+    "content": [
+      "Physiotherapists can use Kompass to set, track, and manage rehabilitation goals for clients recovering from physical injuries or neurological conditions. The platform helps physiotherapists streamline treatment plans and ensure continuous progress monitoring.",
+      "Furthermore, Kompass can help physiotherapists collaborate with other MDT members on a client’s team, facilitating communication for a successful goal-setting environment."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Speech and Language Therapists",
+    "content": [
+      "Speech and Language Therapists can utilize the Kompass platform to establish clear communication goals for clients with speech impairments. The integration of tools like the WHO's International Classification of Functioning (ICF) and Goal Attainment Scaling (GAS) ensures that treatment plans are evidence-based and aligned with best practices.",
+      "Additionally, the platform’s live updates and detailed guidance ensure that Speech and Language goals remain relevant and adaptable, which is essential for the dynamic nature of multidisciplinary work.",
+      "Furthermore, Kompass helps Speech and Language Therapists connect with other MDT members, allowing for a collaborative goal-setting environment."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Social Workers",
+    "content": [
+      "Social Workers can benefit from the use of Kompass when involved with multidisciplinary teams in rehabilitation settings. The platform aids Social Workers in coordinating services, with live updates assisting in the monitoring of contributions from other professionals.",
+      "The integration of Goal Attainment Scaling (GAS) and SMART frameworks allows Social Workers to track social and functional goals with ease, encouraging collaborative work within an active goal-setting environment."
+    ]
+  }
+]

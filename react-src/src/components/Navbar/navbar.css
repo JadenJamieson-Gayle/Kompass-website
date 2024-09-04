@@ -6,6 +6,7 @@ a {
 
 nav {
   height: 10vh;
+  max-height: 10vh;
   font-size: large;
   background-color: transparent;
   transition: background-color 0.3s ease;

@@ -56,10 +56,11 @@ const Footer: React.FC<FooterProps> = (props) => {
                   <input
                     id="newsletter1"
                     type="text"
-                    className="form-control"
+                    className="form-control align-self-center text-start "
                     placeholder="Email address"
+                    style={{ maxHeight: "30px", maxWidth: "100%" }}
                   />
-                  <Button id="subButton" type="button">
+                  <Button id="subButton" type="button" className="main-btn">
                     Subscribe
                   </Button>
                 </div>
@@ -69,9 +70,7 @@ const Footer: React.FC<FooterProps> = (props) => {
         </Row>
         <Row className="SocialRow m-3 pt-2 mt-auto fixed-bottom d-flex flex-md-row flex-column">
           <Col className="mt-2 px-0 d-flex align-items-center justify-content-md-start justify-content-center  ">
-            <p className="text-start">
-              © 2024 Kompass®. All rights reserved.
-            </p>
+            <p className="text-start">© 2024 Kompass®. All rights reserved.</p>
           </Col>
           <Col className=" px-0 ">
             <ul className="list-unstyled d-flex justify-content-md-end justify-content-center">

@@ -37,6 +37,7 @@
   position: relative; /* Ensure the parent container is relatively positioned */
 
   height: fit-content;
+  margin-top: 10vh;
   /*margin: 0 15px; /* Adjust margins as needed */
 }
 
@@ -57,4 +58,52 @@
 
 h1 {
   font-size: 3rem;
+}
+
+.mockup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff; /* Light grey background to make the image pop */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  max-width: 90%; /* Make sure the container doesn't exceed the page width */
+  margin: 0 auto; /* Center the container horizontally */
+  position: relative;
+}
+
+.mockup-image {
+  max-width: 100%;
+  border-radius: 10px; /* Rounds the corners of the image */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow to the image itself */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.mockup-image:hover {
+  transform: scale(1.05) rotate(3deg); /* Slight zoom and rotation on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.heroHeader {
+  font-size: 5rem;
+}
+
+.heroText {
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .heroHeader {
+    font-size: 2rem !important;
+  }
+  .hero {
+    max-height: fit-content;
+  }
+  .mockup-container {
+    width: 100% !important;
+    margin: 0;
+  }
+  .heroText {
+    width: 100%;
+  }
 }

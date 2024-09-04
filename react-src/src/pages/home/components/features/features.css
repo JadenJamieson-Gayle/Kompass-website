@@ -27,3 +27,15 @@
   border-radius: 25px;
   background-color: white;
 }
+
+.sticky-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sticky-element {
+  position: absolute; /* Positioning the sticky element within the container */
+  top: 0;
+  width: 100%;
+}

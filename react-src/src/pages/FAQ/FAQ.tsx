@@ -34,7 +34,7 @@ const FAQCompnent = () => {
           </h1>
           <p className="m-0 mt-4">
             Have a different question?{" "}
-            <a href="your-contact-page-url-here" className="a-link">
+            <a href="contact-us" className="a-link">
               Contact us here
             </a>
             , and we'll get back to you as soon as possible.

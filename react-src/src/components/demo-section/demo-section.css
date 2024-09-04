@@ -1,0 +1,12 @@
+.demo-section {
+  background-color: rgb(0, 166, 162) !important;
+  border-radius: 25px;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section-header {
+  color: white !important;
+  font-weight: 600;
+  font-size: 3rem;
+}

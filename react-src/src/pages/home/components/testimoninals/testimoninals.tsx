@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./testimoninals.css";
-import Score from "./components/score/score";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import axios from "axios";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface Props {
   id: number;
@@ -18,8 +20,9 @@ interface Props {
   };
 }
 
-const Testimoninals = () => {
+const Testimonials = () => {
   const [reviewData, setReviewData] = useState<Props[]>([]);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     axios
@@ -27,93 +30,107 @@ const Testimoninals = () => {
         "http://localhost:8000/wp-json/wp/v2/testimonial?acf_format=standard&_fields=id,title,acf"
       )
       .then((response) => {
+        console.log("API Response:", response.data); // Log the response data
         setReviewData(response.data);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        console.error("Error fetching data:", error); // Log any errors
+      });
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Determine the number of cards per slide based on screen width
+  const cardsPerSlide = windowWidth < 768 ? 1 : windowWidth < 1024 ? 2 : 3;
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: cardsPerSlide,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    arrows: false,
+  };
+
   return (
-    <div className="testi mx-md-5 mx-3 p-4 pb-5 d-flex flex-column align-items-center">
-      <div
-        className="mb-4 mb-md-0"
-        style={{ textAlign: "center", marginTop: "50px" }}
-      >
-        {" "}
-        <h3
-          style={{
-            color: "rgb(0, 166, 162)",
-            textAlign: "center",
-          }}
-        >
-          Testimonials
-        </h3>
-        <h1 style={{ color: "black" }}>
-          We have worked with thousands of amazing people{" "}
-        </h1>
-      </div>
-      <Row className="mx-0 mt-5 d-flex flex-wrap w-100 justify-content-center">
-        {reviewData.slice(0, 3).map((item, index) => {
-          return (
-            <Col
-              key={index}
-              xs={12}
-              md={6}
-              lg={4}
-              className="my-3 d-flex"
-              style={{ minHeight: "100%" }}
+    <div className="testimonial-slider-container">
+      <Slider {...settings}>
+        {reviewData.map((item) => (
+          <div key={item.id}>
+            <Card
+              className="  p-3 h-100 shadow-lg border-0 rounded-lg bg-white card-hover"
+              style={{
+                minHeight: "100%",
+                borderRadius: "1rem",
+                width: "100%",
+              }}
             >
-              <Card
-                className="mx-md-4 my-md-3 p-4 h-100 shadow-lg border-0 rounded-lg bg-white card-hover"
-                id={`review-card-${index}`}
-                style={{ minHeight: "100%", borderRadius: "1rem" }}
-              >
-                <Card.Body className="d-flex flex-column flex-grow-1 p-4">
-                  <Card.Text
-                    className="text-start flex-grow-1 my-4"
+              <Card.Body className="d-flex flex-column flex-grow-1 p-4 h-100">
+                <Card.Text
+                  className="text-start flex-grow-1 my-4"
+                  style={{
+                    fontStyle: "italic",
+                    color: "#333",
+                    fontSize: "1.1rem",
+                    overflow: "hidden",
+                    whiteSpace: "normal",
+                    textOverflow: "clip",
+                  }}
+                >
+                  "{item.acf.testimonial_text}"
+                </Card.Text>
+                <div className="d-flex flex-row align-items-center mt-auto">
+                  <img
+                    src={item.acf.testimonial_image.url}
+                    alt={item.acf.testimonial_name}
+                    className="rounded-circle me-3 shadow"
                     style={{
-                      fontStyle: "italic",
-                      color: "#333",
-                      fontSize: "1.1rem",
+                      width: "60px",
+                      height: "60px",
+                      objectFit: "cover",
+                      border: "3px solid #fff",
+                      boxShadow: "0 0 0 2px #e5e7eb",
                     }}
-                  >
-                    "{item.acf.testimonial_text}"
-                  </Card.Text>
-                  <div className="d-flex flex-md-row flex-column align-items-center mt-auto">
-                    <img
-                      src={item.acf.testimonial_image.url}
-                      alt={item.acf.testimonial_name}
-                      className="rounded-circle me-3 shadow"
+                  />
+                  <div className="d-flex flex-column text-start">
+                    <Card.Text
+                      className="font-weight-bold mb-1"
                       style={{
-                        width: "60px",
-                        height: "60px",
-                        objectFit: "cover",
-                        border: "3px solid #fff",
-                        boxShadow: "0 0 0 2px #e5e7eb",
+                        fontSize: "1.125rem",
+                        color: "#000",
+                        wordBreak: "break-word",
+                        overflowWrap: "break-word",
                       }}
-                    />
-                    <div className="d-flex flex-column text-start">
-                      <Card.Text
-                        className="font-weight-bold mb-1"
-                        style={{ fontSize: "1.125rem", color: "#000" }}
-                      >
-                        {item.acf.testimonial_name}
-                      </Card.Text>
-                      <Card.Text
-                        className="text-muted"
-                        style={{ fontSize: "0.875rem", color: "#555" }}
-                      >
-                        {item.acf.testimonial_role}
-                      </Card.Text>
-                    </div>
+                    >
+                      {item.acf.testimonial_name}
+                    </Card.Text>
+                    <Card.Text
+                      className="text-muted"
+                      style={{
+                        fontSize: "0.875rem",
+                        color: "#555",
+                        wordBreak: "break-word",
+                        overflowWrap: "break-word",
+                      }}
+                    >
+                      {item.acf.testimonial_role}
+                    </Card.Text>
                   </div>
-                </Card.Body>
-              </Card>
-            </Col>
-          );
-        })}
-      </Row>
+                </div>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
 
-export default Testimoninals;
+export default Testimonials;

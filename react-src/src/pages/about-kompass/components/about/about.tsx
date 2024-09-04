@@ -9,7 +9,7 @@ const About = () => {
     <div className="container-fluid" style={{ overflow: "visible" }}>
       <div className="row min-vh-100" style={{ overflow: "visible" }}>
         <div className="col-md-12 p-4 text-start">
-          <Row className="mx-4 mb-5 pb-5">
+          <Row className="mx-md-4 mb-md-5 pb-5">
             <Col sm={6} className="d-flex flex-column">
               <h3
                 className="px-0"
@@ -76,7 +76,7 @@ const About = () => {
               </div>
             </Col>
           </Row>
-          <Row className="mx-4 my-5 py-5">
+          <Row className="mx-md-4 my-md-5 py-5">
             <Col sm={6} className="d-flex flex-column">
               <h3
                 className="px-0"
@@ -155,7 +155,7 @@ const About = () => {
               </div>
             </Col>
           </Row>
-          <Row className="mx-4 my-5 py-5">
+          <Row className="mx-md-4 my-md-5 py-5">
             <h3
               className="px-0"
               style={{ color: "rgb(0, 166, 162)", textAlign: "left" }}

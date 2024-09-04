@@ -1,0 +1,61 @@
+.input-group-text {
+  background-color: #f0f4ff;
+  border: 1px solid #0c2e50;
+  color: #1a73e8;
+}
+
+.form-control {
+  text-align: center;
+  border: 1px solid #0c2e50;
+  max-width: fit-content;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-custom {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  height: 70px;
+}
+
+.btn-custom.active {
+  background-color: #f0f4ff;
+  color: #0c2e50;
+  width: 100px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.pricing-label {
+  font-weight: 600;
+}
+
+.pricing-btn-radio {
+  background-color: #fff !important;
+  color: #0c2e50 !important;
+  border-color: #0c2e50 !important;
+}
+
+input[type="radio"]:checked + .pricing-btn-radio {
+  background-color: #0c2e50 !important;
+  color: #fff !important;
+}
+
+.pricing-select-clients-btn {
+  background-color: #0c2e50 !important;
+  color: #fff;
+}
+
+.pricing-channel-input {
+  color: #0c2e50 !important;
+}

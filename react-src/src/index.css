@@ -37,6 +37,59 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #00a6a2; /* Color of the scroll thumb on hover */
 }
-.boxcontainer:hover {
-  /* This will make the shadow more pronounced on hover */
+
+.p-8 {
+  padding: 8rem !important;
+}
+.p-7 {
+  padding: 7rem !important;
+}
+
+.pt-7 {
+  padding-top: 7rem !important;
+}
+
+.p-md-8 {
+  padding: 8rem !important;
+}
+.w-60 {
+  width: 60% !important;
+}
+
+.mt-8 {
+  padding-top: 8rem !important;
+}
+
+.main-btn {
+  background-color: #00a6a2 !important;
+  border-color: #00a6a2 !important;
+  color: white;
+  padding: 8px 24px;
+  font-weight: 700 !important;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: #008e8a !important;
+  border-color: #008e8a !important;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.demo-btn {
+  background-color: #0c2c54 !important;
+  border-color: #0c2c54 !important;
+  color: white !important;
+  padding: 8px 24px;
+  font-weight: 700 !important;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.demo-btn:hover {
+  background-color: #08408a !important;
+  border-color: #08408a !important;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }

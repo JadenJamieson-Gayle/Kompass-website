@@ -7,6 +7,7 @@ import Footer from "../../components/footer/footer";
 import Affliations from "./components/affiliations/affliations";
 import Testimoninals from "./components/testimoninals/testimoninals";
 import Ethos from "./components/ethos/ethos";
+import DemoSection from "../../components/demo-section/demo-section";
 import { gsap } from "gsap";
 
 const Home = () => {
@@ -42,6 +43,9 @@ const Home = () => {
       </section>
       <section>
         <Affliations />
+      </section>
+      <section className=" my-5 d-flex flex-column justify-content-center align-items-center">
+        <DemoSection />
       </section>
       <section className="my-5">
         <Testimoninals />

@@ -1,0 +1,29 @@
+.demo-input-form {
+  max-width: 100%;
+  border-color: white !important;
+  background-color: whitesmoke !important;
+  text-align: start;
+}
+
+.demo-input-form:hover,
+.demo-input-form:active,
+.demo-input-form:focus {
+  max-width: 100%;
+  border-color: #00a6a2 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.demo-input-form-label {
+  color: #0c2e50 !important;
+  opacity: 0.5;
+}
+
+.kompass-website-checkp-input {
+  border-color: #00a6a2 !important;
+}
+
+.kompass-website-checkp-input:checked {
+  background-color: #00a6a2 !important;
+  border-color: #00a6a2 !important;
+}

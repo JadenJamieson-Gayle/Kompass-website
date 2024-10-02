@@ -19,7 +19,7 @@ const featureCard: React.FC<Props> = ({
 }) => {
   console.log(index);
   return (
-    <Card className="feature-card d-flex h-100 flex-row align-items-center  p-3 border-0">
+    <Card className="feature-card d-flex h-100 flex-row align-items-center  p-md-3 p-0 border-0">
       <Card.Body
         className={`d-flex  ${
           index % 2 == 0 ? "flex-md-row" : "flex-md-row-reverse"

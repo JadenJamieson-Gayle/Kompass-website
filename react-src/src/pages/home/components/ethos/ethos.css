@@ -4,4 +4,5 @@
 
 .penny {
   min-width: 275px;
+  max-height: none !important;
 }

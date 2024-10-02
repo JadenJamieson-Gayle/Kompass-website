@@ -6,7 +6,7 @@ import { Col, Image, Row } from "react-bootstrap";
 const Ethos = () => {
   return (
     <div className=" mx-md-5 mx-3 px-md-5 p-3  ethos d-flex justify-content-center algin-items-center flex-md-row flex-column">
-      <Col sm={5} className="me-3">
+      <Col sm={5} className="me-3 d-flex justify-content-center">
         <div className="m-md-4">
           {" "}
           <Image

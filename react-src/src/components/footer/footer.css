@@ -16,3 +16,7 @@ footer {
   background-color: rgb(0, 166, 162);
   border-color: rgb(0, 166, 162);
 }
+
+.kompass-footer-img {
+  max-width: 200px !important;
+}

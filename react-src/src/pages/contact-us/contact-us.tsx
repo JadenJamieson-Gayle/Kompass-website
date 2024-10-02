@@ -5,7 +5,7 @@ import logo from "../../components/Navbar/komapss_logo.png";
 import axios from "axios";
 import Footer from "../../components/footer/footer";
 import "./contact-us.css";
-
+import Navbar from "../../components/Navbar/navbar";
 interface Post {
   id: number;
   acf: {
@@ -30,7 +30,7 @@ const ContactUs = () => {
   }, []);
   return (
     <>
-      <Row className="px-5">
+      {/* <Row className="px-5">
         <Link to="/" className="d-flex justify-content-start px-0 mx-0">
           <img
             alt="logo"
@@ -46,7 +46,11 @@ const ContactUs = () => {
             }}
           />
         </Link>
-      </Row>
+      </Row> */}
+      <section className="mt-5">
+        <Navbar />
+      </section>
+
       <Container
         fluid
         className="p-5 mt-1 pt-3 pt-md-0 d-flex flex-md-row flex-column"

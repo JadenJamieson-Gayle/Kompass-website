@@ -44,7 +44,7 @@ const Home = () => {
       <section>
         <Affliations />
       </section>
-      <section className=" my-5 d-flex flex-column justify-content-center align-items-center">
+      <section className=" my-5 mx-3 d-flex flex-column justify-content-center align-items-center">
         <DemoSection />
       </section>
       <section className="my-5">

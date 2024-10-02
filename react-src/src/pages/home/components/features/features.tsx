@@ -66,7 +66,7 @@ const Features = () => {
           <Row className="my-md-5 d-flex flex-column w-100 px-0 mx-0 justify-content-center ">
             {customData.map((item, index) => {
               return (
-                <Row className="my-5 mx-auto" key={index}>
+                <Row className="my-md-5 my-1 mx-auto" key={index}>
                   <FeatureCard
                     title={item.acf.feature_name}
                     text={item.acf.feature_text}

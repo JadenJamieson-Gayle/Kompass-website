@@ -39,12 +39,78 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #00a6a2; /* Color of the scroll thumb on hover */
 }
-.boxcontainer:hover {
-  /* This will make the shadow more pronounced on hover */
+
+.p-8 {
+  padding: 8rem !important;
+}
+.p-7 {
+  padding: 7rem !important;
+}
+
+.pt-7 {
+  padding-top: 7rem !important;
+}
+
+.p-md-8 {
+  padding: 8rem !important;
+}
+.w-60 {
+  width: 60% !important;
+}
+
+.mt-8 {
+  padding-top: 8rem !important;
+}
+.mt-7 {
+  padding-top: 7rem !important;
+}
+
+.main-btn {
+  background-color: #00a6a2 !important;
+  border-color: #00a6a2 !important;
+  color: white;
+  padding: 8px 24px;
+  font-weight: 700 !important;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: #008e8a !important;
+  border-color: #008e8a !important;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.demo-btn {
+  background-color: #0c2c54 !important;
+  border-color: #0c2c54 !important;
+  color: white !important;
+  padding: 8px 24px;
+  font-weight: 700 !important;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.demo-btn:hover {
+  background-color: #08408a !important;
+  border-color: #08408a !important;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1896px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .App {
   text-align: center;
+  max-width: 1896px;
 }
 
 .App-logo {
@@ -90,6 +156,7 @@ a {
 
 nav {
   height: 10vh;
+  max-height: 10vh;
   font-size: large;
   background-color: transparent;
   transition: background-color 0.3s ease;
@@ -236,6 +303,158 @@ footer {
   border-color: rgb(0, 166, 162);
 }
 
+.kompass-footer-img {
+  max-width: 200px !important;
+}
+
+section.pricing {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.client-amount {
+  color: rgb(0, 166, 162);
+}
+
+.pricing-card-title {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color: #0c2e50;
+}
+
+.pricing-card-title-sub {
+  color: rgb(79, 79, 79);
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+  background-color: rgb(248, 250, 250);
+}
+
+.pricing .card-price .period {
+  font-size: 1.3rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing-btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+  background-color: rgb(0, 166, 162);
+  border: rgb(0, 166, 162);
+  min-height: 20%;
+  width: 50%;
+}
+
+.pricing-btn:hover,
+.pricing-btn:active {
+  background-color: #0c2e50 !important;
+  border-color: #0c2e50 !important;
+  opacity: 100%;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    transform: scale(1.05); /* Scale the card to 105% of its original size */
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+.input-group-text {
+  background-color: #f0f4ff;
+  border: 1px solid #0c2e50;
+  color: #1a73e8;
+}
+
+.form-control {
+  text-align: center;
+  border: 1px solid #0c2e50;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-custom {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  height: 70px;
+}
+
+.btn-custom.active {
+  background-color: #f0f4ff;
+  color: #0c2e50;
+  width: 100px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.pricing-label {
+  font-weight: 600;
+}
+
+.pricing-btn-radio {
+  background-color: #fff !important;
+  color: #0c2e50 !important;
+  border-color: #0c2e50 !important;
+}
+
+input[type="radio"]:checked + .pricing-btn-radio {
+  background-color: #0c2e50 !important;
+  color: #fff !important;
+}
+
+.pricing-select-clients-btn {
+  background-color: #0c2e50 !important;
+  color: #fff;
+}
+
+.pricing-channel-input {
+  color: #0c2e50 !important;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -277,6 +496,7 @@ footer {
   height: -moz-fit-content;
 
   height: fit-content;
+  margin-top: 10vh;
   /*margin: 0 15px; /* Adjust margins as needed */
 }
 
@@ -297,6 +517,55 @@ footer {
 
 h1 {
   font-size: 3rem;
+}
+
+.mockup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff; /* Light grey background to make the image pop */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  max-width: 90%; /* Make sure the container doesn't exceed the page width */
+  margin: 0 auto; /* Center the container horizontally */
+  position: relative;
+}
+
+.mockup-image {
+  max-width: 100%;
+  border-radius: 10px; /* Rounds the corners of the image */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Add shadow to the image itself */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.mockup-image:hover {
+  transform: scale(1.05) rotate(3deg); /* Slight zoom and rotation on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.heroHeader {
+  font-size: 5rem;
+}
+
+.heroText {
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .heroHeader {
+    font-size: 2rem !important;
+  }
+  .hero {
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .mockup-container {
+    width: 100% !important;
+    margin: 0;
+  }
+  .heroText {
+    width: 100%;
+  }
 }
 
 .Endorsment {
@@ -344,21 +613,41 @@ h1 {
   background-color: white;
 }
 
+.sticky-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sticky-element {
+  position: absolute; /* Positioning the sticky element within the container */
+  top: 0;
+  width: 100%;
+}
+
 .feature-card {
   /* Optional: Add a transition for hover effects */
   transition: 0.3s;
   min-width: 300px;
-}
-
-.feature-card:hover {
-  /* This will make the shadow more pronounced on hover */
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.24);
+  background-color: transparent;
+  border-color: transparent !important;
 }
 
 .feature-icon {
   width: -moz-fit-content;
   width: fit-content;
   align-self: center;
+}
+
+.feature-card-header {
+  color: rgb(12, 46, 80);
+  text-align: start;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.mockup-image-features:hover {
+  transform: scale(1.2) !important;
 }
 
 .affliations {
@@ -383,12 +672,11 @@ h1 {
   background-size: 20px 20px; /* Size of the texture pattern */
   background-blend-mode: overlay; /* Blend the gradients */
   background-size: 40px 40px;
-  border-radius: 25px;
 }
 
 .affiliations-card {
-  background: rgba(255, 255, 255, 0.5) !important;
-  border-radius: 10px;
+  background: transparent !important;
+  border: none !important;
   padding: 20px;
   border: none;
   display: flex;
@@ -401,12 +689,50 @@ h1 {
   max-height: 100px;
 }
 
+.affliations {
+  text-align: center;
+}
+
+.slick-item {
+  padding: 0 10px; /* Add padding to maintain space between cards */
+}
+
+.affiliations-card {
+  max-width: 200px; /* Adjust as needed */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.slick-list {
+  display: flex !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center;
+  transition: transform 0.5s linear; /* Ensures smoother transitions */
+}
+
 .testi {
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 25px;
   background: white;
   color: white;
+  padding: 20px;
 }
 
 .review-card {
@@ -420,11 +746,35 @@ h1 {
 
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 100%;
 }
 
 .card-hover:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.testimonial-slider-container {
+  width: 100%;
+  overflow: hidden; /* Ensure no overflow beyond the container */
+}
+
+.testimonial-slider-container .slick-slide {
+  padding: 15px; /* Add padding inside each slide */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.testimonial-slider-container .slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Ensure the slide takes up the full width */
+  max-width: 100%; /* Prevent overflow */
+}
+.card-hover > .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content is spaced out and the card body fills the height */
+  flex-grow: 1; /* Allow the card body to grow and fill available space */
 }
 
 .ethos {
@@ -433,6 +783,20 @@ h1 {
 
 .penny {
   min-width: 275px;
+  max-height: none !important;
+}
+
+.demo-section {
+  background-color: rgb(0, 166, 162) !important;
+  border-radius: 25px;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section-header {
+  color: white !important;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 .about {
@@ -451,6 +815,176 @@ h1 {
 .btn-outline-none {
   border: none !important;
   outline: none !important;
+}
+
+.demo-input-form {
+  max-width: 100%;
+  border-color: white !important;
+  background-color: whitesmoke !important;
+  text-align: start;
+}
+
+.demo-input-form:hover,
+.demo-input-form:active,
+.demo-input-form:focus {
+  max-width: 100%;
+  border-color: #00a6a2 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.demo-input-form-label {
+  color: #0c2e50 !important;
+  opacity: 0.5;
+}
+
+.kompass-website-checkp-input {
+  border-color: #00a6a2 !important;
+}
+
+.kompass-website-checkp-input:checked {
+  background-color: #00a6a2 !important;
+  border-color: #00a6a2 !important;
+}
+
+
+
+.bg-kompass {
+  background-color: #0c2c54 !important;
+}
+
+.text-white,
+.text-light {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* StickyScroll.css */
+
+.sticky-menu {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 15px 0;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: #0c2c54;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-link i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.menu-link:hover {
+  background-color: #d3d3d3; /* Light grey */
+  transform: translateX(5px);
+}
+
+/* Active state when a section is in view */
+.menu-link.active {
+  background-color: #d3d3d3; /* Light grey */
+  font-weight: 600;
+  transform: translateX(5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-link {
+    font-size: 16px;
+  }
+
+  .menu-link i {
+    font-size: 20px;
+  }
+}
+
+.text-kompass-brand {
+  color: #0c2c54 !important;
+}
+
+.content-section {
+  margin-bottom: 8rem; /* Add space between sections */
+  text-align: left;
+  scroll-margin-top: 100px;
+}
+
+.text-kompass-brand {
+  color: #0c2c54; /* Example brand color */
+}
+
+img.img-fluid {
+  max-height: 400px; /* Limit image height if needed */
+  object-fit: cover; /* Ensure image covers the defined area */
+}
+
+.currentResearchHero {
+  width: 100%;
+  background-color: rgb(12, 44, 84);
+}
+
+.a-research {
+  color: #00a6a2 !important;
+}
+
+.pastResearchHero {
+  width: 100%;
+  background-color: rgb(12, 44, 84);
+}
+
+
+.collab-btn {
+  background-color: rgb(0, 166, 162) !important;
+  border-color: rgb(0, 166, 162) !important;
+  font-weight: 600;
+}
+.collab-btn:hover,
+.collab-btn-active {
+  background-color: rgb(12, 44, 84) !important;
+  border-color: rgb(12, 44, 84) !important;
+  font-weight: 600;
+}
+.info-container {
+  border: 2px solid rgb(12, 44, 84) !important;
+  border-radius: 5px;
+  height: 53vh;
+  max-height: 100%;
+  width: 100%;
+  overflow-y: auto;
+
+  box-sizing: border-box;
+}
+
+.collab-h3 {
+  color: rgb(0, 166, 162) !important;
+}
+
+.text-box {
+  width: 100%;
+  max-height: 100%;
+
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 

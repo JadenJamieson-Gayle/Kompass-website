@@ -76,12 +76,12 @@ const Affiliations = () => {
         className="mt-2 mb-3 mx-auto"
         style={{ borderBottom: "1px solid rgb(0,166,162)", width: "10%" }}
       ></div>
-      <div className=" p-5 pt-0 mt-5 d-flex flex-column justify-content-start align-items-center affliations">
-        <div className="carousel-container mt-4" style={{ width: "100%" }}>
+      <div className="  mt-5 d-flex flex-column justify-content-start align-items-center affliations">
+        <div className="carousel-container " style={{ width: "100%" }}>
           <Slider {...settings}>
             {customData.map((item, index) => (
               <div key={item.id}>
-                <Card className="bg-light shadow-sm affiliations-card mx-3">
+                <Card className="bg-light  affiliations-card mx-3">
                   <Card.Body className="d-flex justify-content-center align-items-center p-3">
                     <img
                       src={item.acf.logo_home.url}

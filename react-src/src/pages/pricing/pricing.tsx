@@ -80,7 +80,7 @@ const Pricingpage = () => {
   };
 
   return (
-    <div className="pricing">
+    <div className="App pricing">
       <Navbar />
       <section style={{ marginTop: "175px" }} className="mb-5">
         <Row className="mb-5 ">

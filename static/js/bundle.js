@@ -137,7 +137,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/wp-content/themes/my-react-theme/";
+/******/ 	__webpack_require__.p = "wp-content/themes/my-react-theme/";
 /******/
 /******/ 	var jsonpArray = this["webpackJsonpmy-react-theme"] = this["webpackJsonpmy-react-theme"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);

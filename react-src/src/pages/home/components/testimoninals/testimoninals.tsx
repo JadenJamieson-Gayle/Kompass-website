@@ -46,7 +46,7 @@ const Testimonials = () => {
   }, []);
 
   // Determine the number of cards per slide based on screen width
-  const cardsPerSlide = windowWidth < 768 ? 1 : windowWidth < 1024 ? 2 : 3;
+  const cardsPerSlide = windowWidth < 980 ? 1 : windowWidth < 1440 ? 2 : 3;
 
   const settings = {
     infinite: true,

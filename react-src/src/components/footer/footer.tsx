@@ -17,7 +17,7 @@ const Footer: React.FC<FooterProps> = (props) => {
     <footer className="m-md-5 m-3">
       <Container
         fluid
-        className="footer d-flex flex-column justify-content-between"
+        className="footer d-flex flex-column justify-content-between p-3"
         id="footer-container"
         style={{
           marginTop: "auto",
@@ -28,24 +28,32 @@ const Footer: React.FC<FooterProps> = (props) => {
         data-aos-duration="500"
         data-aos-delay="300"
       >
-        <Row className="d-flex  mb-5 flex-md-row flex-column">
-          <Col>
-            <Row className="mt-3">
-              <img
-                alt="logo"
-                src={logo}
-                width="50px"
-                height="fit-content"
-                className="d-inline-block align-top me-5"
-              />{" "}
-              <p className="text-center">
-                Empowering Healthcare with Goal-Driven Technology
-              </p>
-            </Row>
-            <Row></Row>
+        <Row className="d-flex  mb-4 flex-md-row flex-column px-4 py-3">
+          <Col sm={4} className="d-flex flex-column ">
+            <img
+              alt="logo"
+              src={logo}
+              height="fit-content"
+              className="d-inline-block align-top me-5 kompass-footer-img img-fulid align-self-start ps-0  w-auto"
+              style={{ maxWidth: "400px !important" }}
+            />{" "}
+            <h4
+              className="text-start mt-3 ms-2 fw-bold "
+              style={{ letterSpacing: "1px", fontSize: "1.25rem" }}
+            >
+              Empowering Innovation and Transforming Healthcare: A Future Driven
+              by Technology and Focused on Patients.
+            </h4>
+            <Button
+              variant="primary"
+              href="/request-a-demo"
+              className=" px-3 py-2 mt-4 ms-2 demo-btn w-50 align-self-start"
+            >
+              Request a Demo
+            </Button>
           </Col>
-          <Col className=" d-flex offset-md-1 mb-3 align-items-center justify-content-center">
-            <Row>
+          <Col className=" d-flex offset-md-1 mb-3 mt-3 align-items-center ">
+            {/* <Row>
               <form>
                 <h5>Subscribe to our newsletter</h5>
                 <p>Monthly digest of what's new and exciting from us.</p>
@@ -65,7 +73,34 @@ const Footer: React.FC<FooterProps> = (props) => {
                   </Button>
                 </div>
               </form>
-            </Row>
+            </Row> */}
+
+            <Col className="d-flex flex-column  justify-content-center">
+              <h3>About us</h3>
+              <ul className="list-unstyled mt-2">
+                <li className="my-2">About Kompass</li>
+                <li className="my-2">The team</li>
+                <li className="my-2">Who is it for</li>
+              </ul>
+            </Col>
+            <Col className="d-flex flex-column  justify-content-center">
+              {" "}
+              <h3>Research</h3>
+              <ul className="list-unstyled mt-2">
+                <li className="my-2">Current Research</li>
+                <li className="my-2">Past Research</li>
+                <li className="my-2">Collaborators & Partners</li>
+              </ul>
+            </Col>
+            <Col className="d-flex flex-column  justify-content-center">
+              {" "}
+              <h3>Support</h3>
+              <ul className="list-unstyled mt-2">
+                <li className="my-2">Support Packages</li>
+                <li className="my-2">Contact Us</li>
+                <li className="my-2">FAQ's</li>
+              </ul>
+            </Col>
           </Col>
         </Row>
         <Row className="SocialRow m-3 pt-2 mt-auto fixed-bottom d-flex flex-md-row flex-column">

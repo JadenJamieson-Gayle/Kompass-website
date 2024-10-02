@@ -12,7 +12,7 @@
 <script> wpThemeClient.start("ws", "127.0.0.1", "8090"); </script>
 
 <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/wp-content/themes/my-react-theme/favicon.ico" />
+    <link rel="shortcut icon" href="wp-content/themes/my-react-theme/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -29,17 +29,17 @@
         If you're reading this from "view source" in your browser, it might not make sense as
         these tokens have already been evaluated and replaced, even in this remark blurb.
 
-        Notice the use of "php echo $TEMPLATE_PATH;" and /wp-content/themes/my-react-theme in the tags above.
-        Both will be replaced with the URL of the `public` folder during the build (/wp-content/themes/my-react-theme) or
+        Notice the use of "php echo $TEMPLATE_PATH;" and wp-content/themes/my-react-theme in the tags above.
+        Both will be replaced with the URL of the `public` folder during the build (wp-content/themes/my-react-theme) or
         at render time (php echo $TEMPLATE_PATH;)
         Only files inside the `public` folder can be referenced like this.
 
-        Unlike "/favicon.ico" or "favicon.ico", "/wp-content/themes/my-react-theme/favicon.ico" will
+        Unlike "/favicon.ico" or "favicon.ico", "wp-content/themes/my-react-theme/favicon.ico" will
         work correctly both with client-side routing and a non-root public URL.
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>React WordPress Theme</title>
-<link href="/wp-content/themes/my-react-theme/static/css/0.chunk.css?6696aa8b69ccae9c3e6e" rel="stylesheet"><link href="/wp-content/themes/my-react-theme/static/css/main.chunk.css?6696aa8b69ccae9c3e6e" rel="stylesheet"></head>
+<link href="wp-content/themes/my-react-theme/static/css/0.chunk.css?eb8a2b058047a270f201" rel="stylesheet"><link href="wp-content/themes/my-react-theme/static/css/main.chunk.css?eb8a2b058047a270f201" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +55,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/wp-content/themes/my-react-theme/static/js/bundle.js?6696aa8b69ccae9c3e6e"></script><script src="/wp-content/themes/my-react-theme/static/js/0.chunk.js?6696aa8b69ccae9c3e6e"></script><script src="/wp-content/themes/my-react-theme/static/js/main.chunk.js?6696aa8b69ccae9c3e6e"></script></body>
+    <script src="wp-content/themes/my-react-theme/static/js/bundle.js?eb8a2b058047a270f201"></script><script src="wp-content/themes/my-react-theme/static/js/0.chunk.js?eb8a2b058047a270f201"></script><script src="wp-content/themes/my-react-theme/static/js/main.chunk.js?eb8a2b058047a270f201"></script></body>
 </html>

@@ -34,7 +34,7 @@
     "craeject": "react-scripts eject",
     "crastart": "react-scripts start",
     "cratest": "react-scripts test",
-    "build": " NODE_OPTIONS=--openssl-legacy-provider wptheme-scripts build",
+    "build": " NODE_OPTIONS=--openssl-legacy-provider wptheme-scripts wpbuild",
     "start": "NODE_OPTIONS=--openssl-legacy-provider wptheme-scripts start",
     "wpbuild": "wptheme-scripts wpbuild",
     "wpstart": "wptheme-scripts wpstart"
@@ -54,6 +54,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/wp-content/themes/my-react-theme",
-  "browserLaunchTo": "http://localhost:8080"
+  "homepage": "wp-content/themes/my-react-theme",
+  "browserLaunchTo": "http://localhost:8000"
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "National Institute of Health Research",
+    "info": "Currently we are delivering a NIHR funded research project, trialling a musculoskeletal application ‘FLX Health’ within a population of individuals who have previously had a brain injury."
+  },
+  {
+    "id": 2,
+    "title": "United Kingdom Research Innovation (UKRI)",
+    "info": "We have successfully received two UKRI grants. Currently, we are working on a Biomedical Catalyst Grant to develop and design wireframes of a Patient Portal application to accompany Kompass. Previously, we received grant funding after the founder of Kompass was awarded the Women in Innovation award, to develop a Data Dashboard for the Kompass platform."
+  },
+  {
+    "id": 3,
+    "title": "European Regional Development Fund (ERDF) and Health Innovation Manchester (HiM)",
+    "info": "Funding from these organizations supported the deployment of Kompass within a stroke service to investigate the use of the app in an NHS setting."
+  },
+  {
+    "id": 4,
+    "title": "Salford Royal NHS Foundation Trust",
+    "info": "Kompass worked in conjunction with Salford Royal NHS Foundation Trust to complete a service-wide audit, testing the Data Dashboard and harnessing technology to perform administrative tasks."
+  }
+]

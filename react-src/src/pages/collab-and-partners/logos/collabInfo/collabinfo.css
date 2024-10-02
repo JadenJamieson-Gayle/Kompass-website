@@ -1,0 +1,33 @@
+.collab-btn {
+  background-color: rgb(0, 166, 162) !important;
+  border-color: rgb(0, 166, 162) !important;
+  font-weight: 600;
+}
+.collab-btn:hover,
+.collab-btn-active {
+  background-color: rgb(12, 44, 84) !important;
+  border-color: rgb(12, 44, 84) !important;
+  font-weight: 600;
+}
+.info-container {
+  border: 2px solid rgb(12, 44, 84) !important;
+  border-radius: 5px;
+  height: 53vh;
+  max-height: 100%;
+  width: 100%;
+  overflow-y: auto;
+
+  box-sizing: border-box;
+}
+
+.collab-h3 {
+  color: rgb(0, 166, 162) !important;
+}
+
+.text-box {
+  width: 100%;
+  max-height: 100%;
+
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

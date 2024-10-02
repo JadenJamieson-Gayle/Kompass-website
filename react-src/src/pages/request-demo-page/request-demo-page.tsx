@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./request-demo-page.css";
 import { Container, Col, Row } from "react-bootstrap";
 import Footer from "../../components/footer/footer";
-import logo from "../../components/Navbar/komapss_logo.png";
 import axios from "axios";
+import Navbar from "../../components/Navbar/navbar";
 
 interface Post {
   id: number;
@@ -32,24 +31,13 @@ const RequestDemoPage = () => {
   console.log(LogoUrl);
   return (
     <>
-      <Row className="px-5">
-        <Link to="/" className="d-flex justify-content-start px-0 mx-0">
-          <img
-            alt="logo"
-            src={logo}
-            width="200px"
-            height="fit-content"
-            className="d-inline-block align-top "
-            style={{
-              maxHeight: "300px",
-              minHeight: "50px",
-              minWidth: "18%",
-              cursor: "pointer",
-            }}
-          />
-        </Link>
-      </Row>
-      <Container fluid className="p-5 mt-1 pt-3 d-flex flex-md-row flex-column">
+      <Navbar />
+
+      <Container
+        fluid
+        className="p-5  pt-3 d-flex flex-md-row flex-column"
+        style={{ marginTop: "75px" }}
+      >
         <Col className="p-md-5 pt-md-7 pt-3 my-md-0 my-3 d-flex flex-column align-items-center justify-content-center">
           <h1
             className=""
